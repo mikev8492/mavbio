@@ -48,6 +48,9 @@ const { Content } = await render(entry);
 					<div class="content">
 						<Content />
 					</div>
+					<video autoplay loop>
+						<source src={entry.data.video}type="video/mp4">
+					</video>
 				</div>
 			</main>
 		</div>
