@@ -8,16 +8,28 @@ description: |
 tags:
   - Express
   - NodeJS
-  - MSSQL
+  - MSSQL/SQLite
 ---
 
-Most cell therapy manufacturing processes utilize a paper system and require some form of manual data entry post-process to allow analysis for KPIs and process development/research activities.
+**CTiS** stands for **Cell Therapy Informatics System** and is a data entry application built for GMP cell therapy manufacturing processes. 
 
-While working as a manufacturing associate, I had the opportunity to build a new data entry system for the team. The previous system was a MicrosoftAccess database that satisfied all the requirements for data entry and storage, but was limited in user access (for the cross functional teams) and export options. Microsoft Access has general limitations for scalability and security, so we decided to build out a web-based data entry system. 
+#### Background:
 
-To accomplish this, I developed the interface using Node.js and Express. The database was migrated from MS Access to a Microsoft SQL server, and the application was connected through SSIS. This ensured security as we were able to perform authentication through the company's SSO login credentials. The web interface allowed access by users on any device on the local network, and allowed us to perform data sanitization and automate more of the calculations and fields for the users. We then built a KPI dashboard on the homescreen and an API to simplify data export for analysis by other departments. The user signin also allowed for more traceability as we were able to build a changelog for data entry and updates.
+Cell Therapy manufacturing processes that utilize a paper batch record system require some form of manual data entry post-process to allow analysis for KPIs and process development/research activities.
 
-#### [CTiS Demo](https://duckduckgo.com)
+While working as a manufacturing associate, I had the opportunity to build a new data entry system for the team. The previous system was a Microsoft Access database that satisfied all the requirements for data entry and storage, but was limited in user access control (for the cross functional teams), scalability, and security. We decided to build a custom web-based data entry system in-house. 
 
-###### The demo is a complete rebuild of this system formatted for general cell therapy product data fields. To expedite the build, I used Ruby on Rails as a framework with SQLite. 
+The front end was built using Node.js and Express. The database was migrated from MS Access to a Microsoft SQL server and connected through SSIS. This ensured security as we were able to perform authentication through employee's SSO login credentials. The web interface allowed access by users on any device on the local network, and allowed us to have more control and customizability within the forms. 
 
+#### Overview:
+The system is built to manage multiple cell therapy products.
+
+A list of lots for each product displays with a status indicator for the manufacturing run. The search field uses a "fuzzy" search algorithm to display a partial match to anything entered by the user. 
+
+The data entry forms are customized for each product's unique parameters and process flow. 
+Each process day/section can be saved by MFG and locked by Quality Assurance (or any pre-defined user groups) independently, allowing multi-day cultures to be reviewed as they are processed. Each field is formatted to ensure data consistency using double-entry and auto-formatting for time and date fields, and a chart displays cell yield and dose information for process visibility. 
+The export button outputs the selected lot's process data as CSV for external data analysis. 
+
+##### [Click here for a Demo](https://duckduckgo.com)
+
+*NOTE: The demo version was rebuilt with SQLite and is configured with a guest (read-only) profile.* 
