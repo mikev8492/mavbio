@@ -1,7 +1,5 @@
 # Portfolio site for MavBio LLC. 
-## created by Michael V. using Astro JS:
-
-# Astro Starter Kit: Portfolio
+## Created by Michael V. using Astro JS:
 
 ```sh
 npm create astro@latest -- --template portfolio
