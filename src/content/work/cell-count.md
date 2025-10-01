@@ -1,6 +1,6 @@
 ---
 title: CCV Calculator
-publishDate: 2022-10-01 00:00:00
+publishDate: 2024-05-01 00:00:00
 img: /assets/work/calculator_image.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 video: /assets/work/NC_calculator_demo.mp4

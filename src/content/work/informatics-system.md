@@ -1,14 +1,15 @@
 ---
 title: CTiS
-publishDate: 2019-12-01 00:00:00
-img: /assets/stock-2.jpg
+publishDate: 2025-10-01 00:00:00
+img: /assets/work/ctis_landing.jpg
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
 description: | 
   Cell Therapy Informatics System
 tags:
   - Express
   - NodeJS
-  - MSSQL/SQLite
+  - MSSQL
+  - SQLite
 ---
 
 **CTiS** stands for **Cell Therapy Informatics System** and is a data entry application built for GMP cell therapy manufacturing processes. 
@@ -22,14 +23,23 @@ While working as a manufacturing associate, I had the opportunity to build a new
 The front end was built using Node.js and Express. The database was migrated from MS Access to a Microsoft SQL server and connected through SSIS. This ensured security as we were able to perform authentication through employee's SSO login credentials. The web interface allowed access by users on any device on the local network, and allowed us to have more control and customizability within the forms. 
 
 #### Overview:
-The system is built to manage multiple cell therapy products.
+The system is built to manage multiple cell therapy products. Each product has its own forms, product chart and schema in the database. 
 
-A list of lots for each product displays with a status indicator for the manufacturing run. The search field uses a "fuzzy" search algorithm to display a partial match to anything entered by the user. 
+![CTiS home page](/public/assets/work/ctis_home.jpg)
+
+A list of lots for each product displays with a status indicator for the manufacturing run. The Lot number search field uses a "fuzzy" search algorithm to display a partial match to anything entered by the user. 
+
+![CTiS product page](/public/assets/work/ctis.product.jpg)
 
 The data entry forms are customized for each product's unique parameters and process flow. 
 Each process day/section can be saved by MFG and locked by Quality Assurance (or any pre-defined user groups) independently, allowing multi-day cultures to be reviewed as they are processed. Each field is formatted to ensure data consistency using double-entry and auto-formatting for time and date fields, and a chart displays cell yield and dose information for process visibility. 
 The export button outputs the selected lot's process data as CSV for external data analysis. 
 
-##### [Click here for a Demo](https://duckduckgo.com)
+![CTiS Lot data entry form](/public/assets/work/ctis_lot.jpg)
 
-*NOTE: The demo version was rebuilt with SQLite and is configured with a guest (read-only) profile.* 
+<!-- ##### [Click here for app Demo]() -->
+##### [App demo coming soon]()
+
+*NOTE: Demo site currently under development.* 
+<!-- *NOTE: The demo version was rebuilt with SQLite and is configured with a guest (read-only) profile.*  -->
+ 

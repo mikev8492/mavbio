@@ -1,6 +1,6 @@
 ---
 title: Automated Labels
-publishDate: 2020-03-02 00:00:00
+publishDate: 2024-03-02 00:00:00
 img: /assets/work/labels.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid.
 video: /assets/work/labels.mp4
