@@ -25,17 +25,17 @@ The front end was built using Node.js and Express. The database was migrated fro
 #### Overview:
 The system is built to manage multiple cell therapy products. Each product has its own forms, product chart and schema in the database. 
 
-![CTiS home page](/public/assets/work/ctis_home.png)
+![CTiS home page](/assets/work/ctis_home.png)
 
 A list of lots for each product displays with a status indicator for the manufacturing run. The Lot number search field uses a "fuzzy" search algorithm to display a partial match to anything entered by the user. 
 
-![CTiS product page](/public/assets/work/ctis_product.png)
+![CTiS product page](/assets/work/ctis_product.png)
 
 The data entry forms are customized for each product's unique parameters and process flow. 
 Each process day/section can be saved by MFG and locked by Quality Assurance (or any pre-defined user groups) independently, allowing multi-day cultures to be reviewed as they are processed. Each field is formatted to ensure data consistency using double-entry and auto-formatting for time and date fields, and a chart displays cell yield and dose information for process visibility. 
 The export button outputs the selected lot's process data as CSV for external data analysis. 
 
-![CTiS Lot data entry form](/public/assets/work/ctis_lot.png)
+![CTiS Lot data entry form](/assets/work/ctis_lot.png)
 
 <!-- ##### [Click here for app Demo]() -->
 ##### [App demo coming soon]()
