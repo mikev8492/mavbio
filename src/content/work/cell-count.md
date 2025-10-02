@@ -3,7 +3,6 @@ title: CCV Calculator
 publishDate: 2024-05-01 00:00:00
 img: /assets/work/calculator_image.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
-video: /assets/work/NC_calculator_demo.mp4
 description: |
   Cell count, viability, and variance calculator.
 tags:
@@ -25,3 +24,9 @@ The calculator is a macro-enabled excel workbook that the manufacturing team cou
 To use the tool, the user first enters the product lot number to autopopulate the form header. Cell count and viability measurements are then entered and the tool auto-calculates the average for each set. The tool indicates when variance is out of specification (based on the color displayed) so the user knows to repeat measurements. After obtaining an acceptable average, the user would then print a pdf report to sign and date and submit with the batch record. 
 
 #### Demo:
+
+<div class="stack gap-10 content">
+  <video controls>
+    <source src="/assets/work/NC_calculator_demo.mp4" type="video/mp4">
+  </video>
+</div>
