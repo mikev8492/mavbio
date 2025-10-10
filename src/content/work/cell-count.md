@@ -23,8 +23,8 @@ During clean room operations, an automated cell counter (NC-200) was used to mea
 
 The calculator is a macro-enabled excel workbook that the manufacturing team could access on the shared drive from a laptop in the clean-room.  
 
-To use the tool, the user first enters the product lot number to autopopulate the form header. Cell count and viability measurements are then entered and the tool auto-calculates the average for each set. The tool indicates when variance is out of specification (based on the color displayed) so the user knows to repeat measurements. After obtaining an acceptable average, the user would then print a pdf report to sign and date and submit with the batch record. 
+To use the tool, the user first enters the product lot number to autopopulate the form header. Cell count and viability measurements are then entered and the tool auto-calculates the average for each set. The tool indicates when variance is out of specification based on the color displayed (fail = red, pass = green), so the user knows to repeat measurements. After obtaining an acceptable average (less than 10% variance, or the average of all 6 replicates), the user would then print a pdf report to sign and date and submit with the batch record. 
 
-##### [Click here for a Demo](https://ccv-6rx498ih3-michael-villarreals-projects.vercel.app)
+##### [Click here for a Demo](https://ccv-app.vercel.app/)
 
 *NOTE: This demo is a React JS application built to mirror the excel calculator functionality.*
