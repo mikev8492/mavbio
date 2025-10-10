@@ -8,6 +8,8 @@ description: |
 tags:
   - Excel
   - VBA
+  - ReactJS
+  - TypeScript
 ---
 
 
@@ -23,10 +25,6 @@ The calculator is a macro-enabled excel workbook that the manufacturing team cou
 
 To use the tool, the user first enters the product lot number to autopopulate the form header. Cell count and viability measurements are then entered and the tool auto-calculates the average for each set. The tool indicates when variance is out of specification (based on the color displayed) so the user knows to repeat measurements. After obtaining an acceptable average, the user would then print a pdf report to sign and date and submit with the batch record. 
 
-#### Demo:
+##### [Click here for a Demo](https://ccv-6rx498ih3-michael-villarreals-projects.vercel.app)
 
-<div class="stack gap-10 content">
-  <video controls>
-    <source src="/assets/work/NC_calculator_demo.mp4" type="video/mp4">
-  </video>
-</div>
+*NOTE: This demo is a React JS application built to mirror the excel calculator functionality.*
