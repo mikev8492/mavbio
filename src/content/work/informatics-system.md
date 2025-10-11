@@ -37,9 +37,7 @@ The export button outputs the selected lot's process data as CSV for external da
 
 ![CTiS Lot data entry form](/assets/work/ctis_lot.png)
 
-<!-- ##### [Click here for app Demo]() -->
-##### [App demo coming soon]()
+##### [Click here for a Demo](https://ctis.onrender.com)
 
-*NOTE: Demo site currently under development.* 
-<!-- *NOTE: The demo version was rebuilt with SQLite and is configured with a guest (read-only) profile.*  -->
+*NOTE: The demo version was rebuilt with SQLite and is configured with a guest (read-only) profile.* 
  
