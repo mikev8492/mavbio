@@ -17,13 +17,19 @@ The CCV Calculator is a tool built to assist GMP manufacturing staff perform cel
 
 #### Background:
 
-During clean room operations, an automated cell counter (NC-200) was used to measure cell density. Duplicate measurements were performed to account for variance, which required the manufacturing staff to calculate percent difference and totals between replicates by hand. To streamline the process and reduce calculation errors, I developed an excel tool to automatically calculate cell count, viability, and percent difference between the replicates. After building the tool and allowing the team to peform user testing, I wrote and executed a validation report to support GMP use. 
+During clean room operations, an automated cell counter (NC-200) was used to measure cell density. Duplicate measurements were performed to account for variance, which required the manufacturing staff to calculate percent difference and totals between replicates by hand.
+
+To streamline the process and reduce calculation errors, I developed an excel tool to automatically calculate cell count, viability, and percent difference between the replicates.
 
 #### Overview:
 
 The calculator is a macro-enabled excel workbook that the manufacturing team could access on the shared drive from a laptop in the clean-room.  
 
-To use the tool, the user first enters the product lot number to autopopulate the form header. Cell count and viability measurements are then entered and the tool auto-calculates the average for each set. The tool indicates when variance is out of specification based on the color displayed (fail = red, pass = green), so the user knows to repeat measurements. After obtaining an acceptable average (less than 10% variance, or the average of all 6 replicates), the user would then print a pdf report to sign and date and submit with the batch record. 
+Cell count and viability measurements are entered for each replicate and the tool calculates the average and variance for each set. 
+
+The tool indicates when variance is out of specification based on the color displayed (fail = red, pass = green), so the user knows to repeat measurements.
+
+ After obtaining an acceptable average (less than 10% variance, or the average of all 6 replicates), the user would then print a pdf report to sign and date and submit with the batch record. 
 
 ##### [Click here for a Demo](https://ccv-app.vercel.app/)
 
