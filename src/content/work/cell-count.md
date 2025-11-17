@@ -12,10 +12,12 @@ tags:
   - TypeScript
 ---
 
+##### [Click here for a Demo](https://ccv-app.vercel.app/)
 
-The CCV Calculator is a tool built to assist GMP manufacturing staff perform cell count and viability calculations.
+*NOTE: This demo is a React JS application built to mirror the excel calculator functionality.*
 
 #### Background:
+The CCV Calculator is a tool built to assist GMP manufacturing staff perform cell count and viability calculations.
 
 During clean room operations, an automated cell counter (NC-200) was used to measure cell density. Duplicate measurements were performed to account for variance, which required the manufacturing staff to calculate percent difference and totals between replicates by hand.
 
@@ -31,6 +33,4 @@ The tool indicates when variance is out of specification based on the color disp
 
  After obtaining an acceptable average (less than 10% variance, or the average of all 6 replicates), the user would then print a pdf report to sign and date and submit with the batch record. 
 
-##### [Click here for a Demo](https://ccv-app.vercel.app/)
 
-*NOTE: This demo is a React JS application built to mirror the excel calculator functionality.*

@@ -11,10 +11,12 @@ tags:
   - MSSQL
   - SQLite
 ---
-
-**CTiS** stands for **Cell Therapy Informatics System** and is a data entry application built for GMP cell therapy manufacturing processes. 
+##### [Click here for a Demo](https://ctis.onrender.com)
+*NOTE: The demo version was rebuilt with SQLite and is configured with a guest (read-only) profile.*
 
 #### Background:
+
+**CTiS** stands for **Cell Therapy Informatics System** and is a data entry application built for GMP cell therapy manufacturing processes.
 
 Cell Therapy manufacturing processes that utilize a paper batch record system require some form of manual data entry post-process to allow analysis for KPIs and process development/research activities.
 
@@ -37,7 +39,5 @@ The export button outputs the selected lot's process data as CSV for external da
 
 ![CTiS Lot data entry form](/assets/work/ctis_lot.png)
 
-##### [Click here for a Demo](https://ctis.onrender.com)
-
-*NOTE: The demo version was rebuilt with SQLite and is configured with a guest (read-only) profile.* 
+ 
  
