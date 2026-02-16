@@ -1,6 +1,47 @@
 # Portfolio site for MavBio LLC. 
-## Created by Michael V. using Astro JS:
+### Created using Astro JS Portfolio template:
 
+## File Structure:
+```
+└── 📁src
+    └── 📁components
+        ├── CallToAction.astro
+        ├── ContactCTA.astro
+        ├── Footer.astro
+        ├── Grid.astro
+        ├── Hero.astro
+        ├── Icon.astro
+        ├── IconPaths.ts
+        ├── MainHead.astro
+        ├── Nav.astro
+        ├── Pill.astro
+        ├── PortfolioPreview.astro
+        ├── Skills.astro
+        ├── ThemeToggle.astro
+    └── 📁content
+        └── 📁work
+            ├── Automated-labels.md
+            ├── cell-count.md
+            ├── informatics-system.md
+    └── 📁layouts
+        ├── BaseLayout.astro
+    └── 📁pages
+        └── 📁work
+            ├── [...slug].astro
+        ├── 404.astro
+        ├── about.astro
+        ├── index.astro
+        ├── work.astro
+    └── 📁styles
+        ├── global.css
+    └── content.config.ts
+```
+## Overview:
+Project pages are dynamically generated in the `pages/work` route by rendering Markdown files in `content/work`. 
+To add a new project to the portfolio page, I just need to create a new Markdown file with the required parameters.  
+
+Read more about [dynamic routes](https://docs.astro.build/en/core-concepts/routing/#dynamic-routes).
+### Astro JS Portfolio template:
 ```sh
 npm create astro@latest -- --template portfolio
 ```
@@ -9,7 +50,6 @@ npm create astro@latest -- --template portfolio
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/portfolio)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/portfolio/devcontainer.json)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 ## 🧞 Commands
 
