@@ -12,6 +12,9 @@ tags:
   - SQLite
 ---
 ##### [Click here for a Demo](https://ctis.onrender.com)
+
+[![Open in GitHub](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/mikev8492/CTiS)
+
 *NOTE: The demo version was rebuilt with SQLite and is configured with a guest (read-only) profile.*
 
 #### Background:

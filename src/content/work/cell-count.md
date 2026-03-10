@@ -14,6 +14,10 @@ tags:
 
 ##### [Click here for a Demo](https://ccv-app.vercel.app/)
 
+![Vercel Deploy](https://deploy-badge.vercel.app/vercel/ccv-app?style=for-the-badge)
+
+[![Open in GitHub](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/mikev8492/ccv-app)
+
 *NOTE: This demo is a React JS application built to mirror the excel calculator functionality.*
 
 #### Background:
