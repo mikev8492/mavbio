@@ -2,7 +2,7 @@
 title: CTiS
 publishDate: 2025-10-01 00:00:00
 img: /assets/work/ctis_landing.png
-img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
+img_alt: Landing page for informatics system
 description: | 
   Cell Therapy Informatics System
 tags:

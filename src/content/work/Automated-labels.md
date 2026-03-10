@@ -2,7 +2,7 @@
 title: Automated Labels
 publishDate: 2024-03-02 00:00:00
 img: /assets/work/labels.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid.
+img_alt: Word document label template.
 description: |
   In-Process label templates. 
 tags:

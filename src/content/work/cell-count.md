@@ -2,7 +2,7 @@
 title: CCV Calculator
 publishDate: 2024-05-01 00:00:00
 img: /assets/work/calculator_image.jpg
-img_alt: Soft pink and baby blue water ripples together in a subtle texture.
+img_alt: Excel workbook screenshot.
 description: |
   Cell count, viability, and variance calculator.
 tags:
