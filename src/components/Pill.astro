@@ -3,6 +3,19 @@
 <style>
 	.pill {
 		display: flex;
+		padding: 0.1rem 0.5rem;
+		gap: 0.5rem;
+		color: var(--accent-text-over);
+		border: 1px solid var(--accent-regular);
+		background-color: var(--accent-regular);
+		border-radius: 999rem;
+		font-size: clamp(0rem, 3vw, var(--text-md));
+		line-height: 1.35;
+		white-space: no-wrap;
+	}
+	@media (min-width: 50em) {
+		.pill {
+		display: flex;
 		padding: 0.5rem 1rem;
 		gap: 0.5rem;
 		color: var(--accent-text-over);
@@ -11,6 +24,7 @@
 		border-radius: 999rem;
 		font-size: var(--text-md);
 		line-height: 1.35;
-		white-space: nowrap;
+		white-space: no-wrap;
+		}
 	}
 </style>
