@@ -21,7 +21,7 @@ tags:
 
 #### Overview
  
-The *GAL1*, *GAL7*, and *GAL10* genes encode enzymes in the Leloir pathway for galactose metabolism. This project systematically located these genes across yeast species, compared their protein-level conservation, and investigated how the surrounding chromosomal architecture has evolved — revealing a contrast between gene-level conservation and large-scale genomic rearrangement.
+The *GAL1*, *GAL7*, and *GAL10* genes encode enzymes in the Leloir pathway for galactose metabolism. This project systematically located these genes across yeast species, compared their protein-level conservation, and investigated how the surrounding chromosomal architecture has evolved: revealing a contrast between gene-level conservation and large-scale genomic rearrangement.
  
 ##### Genomic Locations
  
