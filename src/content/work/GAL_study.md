@@ -2,7 +2,7 @@
 title: GAL-Cluster Conservation
 publishDate: 2026-04-20 00:00:00
 img: /assets/work/GAL_study_circos.png
-img_alt: Circos plot of C. albicans vs S. cerevisiae 
+img_alt: Circos plot of C. albicans vs draft genome 
 description: | 
   
 tags:
@@ -21,11 +21,15 @@ tags:
 
 #### Overview
  
-The *GAL1*, *GAL7*, and *GAL10* genes encode enzymes in the Leloir pathway for galactose metabolism. This project systematically located these genes across yeast species, compared their protein-level conservation, and investigated how the surrounding chromosomal architecture has evolved: revealing a contrast between gene-level conservation and large-scale genomic rearrangement.
+The *GAL1*, *GAL7*, and *GAL10* genes encode the three enzymes of the Leloir pathway, the principal fungal route for converting galactose into glucose-1-phosphate for entry into glycolysis. In *Saccharomyces cerevisiae*, these genes are physically clustered on chromosome II and tightly co-regulated, an arrangement broadly conserved across the fungal kingdom. However, whether this genomic neighbourhood is maintained in more distantly related *Candida* species has remained poorly understood.
+
+![GAL cluster pathway](/assets/work/GAL_leloir_pathway.png "GAL cluster and the Leloir Pathway")
+
+This project located the three genes within a draft genome of an unknown *Candida* species, compared protein-level conservation across taxa, and analysed the surrounding chromosomal architecture. By combining sequence homology searches, synteny analysis, and multi-species protein alignments, the study shows that while the Gal1, Gal7, and Gal10 proteins are highly conserved at the amino acid level, their chromosomal context has undergone considerable reorganisation relative to *S. albicans*. This contrast between gene-level conservation and large-scale genomic rearrangement highlights the value of integrating both levels of analysis when characterising metabolic pathways in non-model organisms.
  
 ##### Genomic Locations
  
-Gene coordinates were identified using NCBI Genome Annotation pages and confirmed with assembly-specific filtering.
+Gene coordinates were identified within two well characterised Candida species using NCBI Genome Annotation pages and confirmed with assembly-specific filtering.
 
 <div class="table-wrap">
  
@@ -54,8 +58,27 @@ Pairwise alignments were performed with the UniProt Align Tool (Clustal Omega) a
 
 </div>
 
-**GAL7** was selected for a broader cross-*Candida* BLAST analysis. A UniProt BLAST search against *Candida* species returned 27 results with 13 highly significant hits (E-value = 0.0). Multiple-sequence alignment of these hits showed protein identity ranging from ~79% to 100%, indicating strong conservation of GAL7 function across the genus.
+**GAL7** was selected for a broader cross-*Candida* BLAST analysis. A UniProt BLAST search against *Candida* species returned 27 results with 13 highly significant hits (E-value = 0.0). Multiple-sequence alignment of these hits showed protein identity across all species is ~81.7%, indicating strong conservation of GAL7 function across the genus.
  
+<div class="table-wrap">
+
+| | XP_713769.2 | B9W705_CANDC | M3IKC2_CANMX | C5MEX8_CANTT | A0A8H7ZK36 | A0AAD5BIS8 | A0A9W4XB10 | H8X1P2_CANO9 | A0AAI9SXI8 | G8B7Z7_CANPC | A0A367XTK6 | A0A367Y509 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **XP_713769.2** | 100.00% | 96.37% | 82.69% | 84.60% | 80.00% | 79.18% | 79.74% | 79.11% | 79.11% | 78.90% | 82.19% | 82.19% |
+| **B9W705_CANDC** | 96.37% | 100.00% | 83.52% | 84.33% | 80.00% | 79.18% | 79.74% | 79.37% | 78.85% | 78.63% | 82.47% | 82.47% |
+| **M3IKC2_CANMX** | 82.69% | 83.52% | 100.00% | 82.14% | 79.01% | 79.34% | 77.01% | 78.85% | 77.96% | 78.51% | 83.52% | 83.24% |
+| **C5MEX8_CANTT** | 84.60% | 84.33% | 82.14% | 100.00% | 78.42% | 76.92% | 74.93% | 77.02% | 76.96% | 75.55% | 88.52% | 88.25% |
+| **A0A8H7ZK36** | 80.00% | 80.00% | 79.01% | 78.42% | 100.00% | 93.37% | 79.63% | 95.00% | 80.74% | 91.41% | 77.35% | 77.90% |
+| **A0AAD5BIS8** | 79.18% | 79.18% | 79.34% | 76.92% | 93.37% | 100.00% | 79.50% | 95.33% | 80.49% | 92.03% | 76.37% | 76.92% |
+| **A0A9W4XB10** | 79.74% | 79.74% | 77.01% | 74.93% | 79.63% | 79.50% | 100.00% | 79.42% | 77.84% | 79.78% | 74.52% | 74.79% |
+| **H8X1P2_CANO9** | 79.11% | 79.37% | 78.85% | 77.02% | 95.00% | 95.33% | 79.42% | 100.00% | 79.84% | 92.86% | 76.71% | 77.26% |
+| **A0AAI9SXI8** | 79.11% | 78.85% | 77.96% | 76.96% | 80.74% | 80.49% | 77.84% | 79.84% | 100.00% | 81.37% | 75.27% | 75.82% |
+| **G8B7Z7_CANPC** | 78.90% | 78.63% | 78.51% | 75.55% | 91.41% | 92.03% | 79.78% | 92.86% | 81.37% | 100.00% | 76.65% | 76.92% |
+| **A0A367XTK6** | 82.19% | 82.47% | 83.52% | 88.52% | 77.35% | 76.37% | 74.52% | 76.71% | 75.27% | 76.65% | 100.00% | 97.54% |
+| **A0A367Y509** | 82.19% | 82.47% | 83.24% | 88.25% | 77.90% | 76.92% | 74.79% | 77.26% | 75.82% | 76.92% | 97.54% | 100.00% |
+
+</div>
+
 ---
 #### PIPELINE
 <!-- Step 1 -->
@@ -184,7 +207,11 @@ Pairwise alignments were performed with the UniProt Align Tool (Clustal Omega) a
 
 #### Key Findings:
  
-Mapping to the unknown *Candida* draft genome confirmed that the GAL cluster order (**GAL1 → GAL10 → GAL7**) is preserved on `scaffold_1`, mirroring the arrangement in *C. albicans*.
+Mapping to the unknown *Candida* draft genome confirmed that the GAL cluster order (**GAL1 → GAL10 → GAL7**) is preserved on `scaffold_1`, although the cluster is located on an inverted region relative to *C. albicans*.
+
+![GAL cluster dotplot](/assets/work/GAL_dotplot.png "GAL Cluster Region Dotplot")
+
+To verify the gene mapping, the Minimap2 alignment output was viewed with SAMtools again, but with the flag character included to determine strand direction [5,6]. GAL1 (XM_708671.2) showed alignment on the reverse strand (FLAG = 16), indicating there may be a different transcriptional orientation [6,7]. Overall the GAL gene cluster order is still conserved, but may be within or outside a larger inversion of the chromosome region relative to the reference chromosome
 
 <div class="table-wrap">
 
@@ -196,12 +223,15 @@ Mapping to the unknown *Candida* draft genome confirmed that the GAL cluster ord
 
 </div>
 
-![GAL cluster dotplot](/assets/work/GAL_dotplot.png "GAL Cluster Region Dotplot")
+ At the whole-genome level, scaffolds 2 and 4 show complete inversions relative to *C. albicans* chromosomes 2 and 8, and multiple scaffolds align to chromosome 1: evidence of translocations or chromosomal fragmentation.
 
-The dot-plot revealed a striking contrast: while gene order within the GAL cluster is conserved, the cluster sits within a region showing a **large chromosomal inversion** relative to *C. albicans*. At the whole-genome level, scaffolds 2 and 4 show complete inversions relative to *C. albicans* chromosomes 2 and 8, and multiple scaffolds align to chromosome 1: evidence of translocations or chromosomal fragmentation.
- 
-GAL7's protein sequence is highly conserved (79–100% identity across *Candida*), while the surrounding genomic architecture has diverged substantially. This contrast highlights how functional constraint at the sequence level can persist even as chromosomal structure undergoes significant reorganization.
- 
+![Genome Comparison](/assets/work/GAL_genome_comparison.png "C. albicans vs. draft Candida sp. genome comparison dotplot")
+
+The GAL cluster protein sequence is highly conserved (~ 80% identity across *Candida*), while the surrounding genomic architecture has diverged substantially. This contrast highlights how functional constraint at the sequence level can persist even as chromosomal structure undergoes significant reorganization.
+
+
+![GAL cluster Comparison](/assets/work/GAL_figure2.png "GAL cluster genomic comparison results")
+
 ---
  
 ##### Skills & Tools:
