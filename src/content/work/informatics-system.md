@@ -42,5 +42,4 @@ The export button outputs the selected lot's process data as CSV for external da
 
 ![CTiS Lot data entry form](/assets/work/ctis_lot.png)
 
- 
- 
+
