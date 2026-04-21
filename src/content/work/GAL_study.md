@@ -27,25 +27,32 @@ The *GAL1*, *GAL7*, and *GAL10* genes encode enzymes in the Leloir pathway for g
  
 Gene coordinates were identified using NCBI Genome Annotation pages and confirmed with assembly-specific filtering.
 
- 
+<div class="table-wrap"> 
+
 | Gene  | *C. albicans* (Chr 1)       | *S. cerevisiae* (Chr 2)     |
 |-------|-----------------------------|-----------------------------|
 | GAL1  | NC_032089.1:449253–450800   | NC_001134.8:279021–280607   |
 | GAL10 | NC_032089.1:452164–454191   | NC_001134.8:276253–278352   |
 | GAL7  | NC_032089.1:456751–457911   | NC_001134.8:274427–275527   |
- 
+
+</div>
+
 All three genes co-localize to a single chromosome in both species, consistent with their role as a co-regulated cluster.
 
 ##### Protein Sequence Similarity (*C. albicans* vs. *S. cerevisiae*)
  
 Pairwise alignments were performed with the UniProt Align Tool (Clustal Omega) and verified with EMBOSS Needle (BLOSUM62).
  
+<div class="table-wrap"> 
+
 | Gene  | Similarity | Identity | Notes                  |
 |-------|-----------|----------|------------------------|
 | GAL7  | ~75%      | ~60%     | Highest conservation   |
 | GAL10 | ~71%      | ~53.6%   |                        |
 | GAL1  | ~62%      | ~44.9%   | Lowest conservation    |
  
+</div>
+
 **GAL7** was selected for a broader cross-*Candida* BLAST analysis. A UniProt BLAST search against *Candida* species returned 27 results with 13 highly significant hits (E-value = 0.0). Multiple-sequence alignment of these hits showed protein identity ranging from ~79% to 100%, indicating strong conservation of GAL7 function across the genus.
  
 ---
@@ -178,11 +185,15 @@ Pairwise alignments were performed with the UniProt Align Tool (Clustal Omega) a
  
 Mapping to the unknown *Candida* draft genome confirmed that the GAL cluster order (**GAL1 → GAL10 → GAL7**) is preserved on `scaffold_1`, mirroring the arrangement in *C. albicans*.
  
+<div class="table-wrap"> 
+
 | Gene  | mRNA ID      | Scaffold   | Start pos. | Strand             |
 |-------|-------------|------------|------------|--------------------|
 | GAL1  | XM_708671.2  | scaffold_1 | 476,277    | Reverse (FLAG=16)  |
 | GAL10 | XM_708673.2  | scaffold_1 | 478,496    | Forward            |
 | GAL7  | XM_708676.2  | scaffold_1 | 483,668    | Forward            |
+
+</div>
  
 ![GAL cluster dotplot](/assets/work/GAL_dotplot.png "GAL Cluster Region Dotplot")
 
