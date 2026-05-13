@@ -1,7 +1,7 @@
 ---
 title: Automated Labels
 publishDate: 2024-03-02 00:00:00
-img: /assets/work/labels.jpg
+img: /assets/work/labels/labels.jpg
 img_alt: Word document label template.
 description: |
   In-Process label templates. 
@@ -16,7 +16,7 @@ GMP cell culture processes require in-process labeling of all reagents and produ
 
 This added time to prepping documentation for the cleanroom, and presented a point for user error as the expiration date could be calculated wrong and used for labeling. 
 
-#### Overview:
+#### Description:
 
 I took the MS Word label templates and added a dialog box to prompt the user to enter the required information (lot number and manufacturing date or current date) and auto-populated the information in the label fields. For reagent labels, I added a VBA function to calculate the expiration date based on the SOP defined duration. 
 
@@ -24,6 +24,6 @@ I took the MS Word label templates and added a dialog box to prompt the user to 
 
 <div class="stack gap-10 content">
   <video controls>
-    <source src="/assets/work/labels.mp4" type="video/mp4">
+    <source src="/assets/work/labels/labels.mp4" type="video/mp4">
   </video>
 </div>

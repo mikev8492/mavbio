@@ -20,9 +20,6 @@
         ├── ThemeToggle.astro
     └── 📁content
         └── 📁work
-            ├── Automated-labels.md
-            ├── cell-count.md
-            ├── informatics-system.md
     └── 📁layouts
         ├── BaseLayout.astro
     └── 📁pages

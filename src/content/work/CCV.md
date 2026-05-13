@@ -1,7 +1,7 @@
 ---
 title: CCV Calculator
 publishDate: 2024-05-01 00:00:00
-img: /assets/work/calculator_image.jpg
+img: /assets/work/ccv/calculator_image.jpg
 img_alt: Excel workbook screenshot.
 description: |
   Cell count, viability, and variance calculator.
@@ -27,7 +27,7 @@ During clean room operations, an automated cell counter (NC-200) was used to mea
 
 To streamline the process and reduce calculation errors, I developed an excel tool to automatically calculate cell count, viability, and percent difference between the replicates.
 
-#### Overview:
+#### Description:
 
 The calculator is a macro-enabled excel workbook that the manufacturing team could access on the shared drive from a laptop in the clean-room.  
 

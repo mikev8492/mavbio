@@ -1,7 +1,7 @@
 ---
 title: GAL-Cluster Conservation
 publishDate: 2026-04-20 00:00:00
-img: /assets/work/GAL_study_circos.png
+img: /assets/work/GAL/GAL_study_circos.png
 img_alt: Circos plot of C. albicans vs draft genome 
 description: | 
   
@@ -23,7 +23,7 @@ tags:
  
 The *GAL1*, *GAL7*, and *GAL10* genes encode the three enzymes of the Leloir pathway, the principal fungal route for converting galactose into glucose-1-phosphate for entry into glycolysis. In *Saccharomyces cerevisiae*, these genes are physically clustered on chromosome II and tightly co-regulated, an arrangement broadly conserved across the fungal kingdom. However, whether this genomic neighbourhood is maintained in more distantly related *Candida* species has remained poorly understood.
 
-![GAL cluster pathway](/assets/work/GAL_leloir_pathway.png "GAL cluster and the Leloir Pathway")
+![GAL cluster pathway](/assets/work/GAL/GAL_leloir_pathway.png "GAL cluster and the Leloir Pathway")
 
 This project located the three genes within a draft genome of an unknown *Candida* species, compared protein-level conservation across taxa, and analysed the surrounding chromosomal architecture. By combining sequence homology searches, synteny analysis, and multi-species protein alignments, the study shows that while the Gal1, Gal7, and Gal10 proteins are highly conserved at the amino acid level, their chromosomal context has undergone considerable reorganisation relative to *S. albicans*. This contrast between gene-level conservation and large-scale genomic rearrangement highlights the value of integrating both levels of analysis when characterising metabolic pathways in non-model organisms.
  
@@ -209,7 +209,7 @@ Pairwise alignments were performed with the UniProt Align Tool (Clustal Omega) a
  
 Mapping to the unknown *Candida* draft genome confirmed that the GAL cluster order (**GAL1 → GAL10 → GAL7**) is preserved on `scaffold_1`, although the cluster is located on an inverted region relative to *C. albicans*.
 
-![GAL cluster dotplot](/assets/work/GAL_dotplot.png "GAL Cluster Region Dotplot")
+![GAL cluster dotplot](/assets/work/GAL/GAL_dotplot.png "GAL Cluster Region Dotplot")
 
 To verify the gene mapping, the Minimap2 alignment output was viewed with SAMtools again, but with the flag character included to determine strand direction [5,6]. GAL1 (XM_708671.2) showed alignment on the reverse strand (FLAG = 16), indicating there may be a different transcriptional orientation [6,7]. Overall the GAL gene cluster order is still conserved, but may be within or outside a larger inversion of the chromosome region relative to the reference chromosome
 
@@ -225,12 +225,12 @@ To verify the gene mapping, the Minimap2 alignment output was viewed with SAMtoo
 
  At the whole-genome level, scaffolds 2 and 4 show complete inversions relative to *C. albicans* chromosomes 2 and 8, and multiple scaffolds align to chromosome 1: evidence of translocations or chromosomal fragmentation.
 
-![Genome Comparison](/assets/work/GAL_genome_comparison.png "C. albicans vs. draft Candida sp. genome comparison dotplot")
+![Genome Comparison](/assets/work/GAL/GAL_genome_comparison.png "C. albicans vs. draft Candida sp. genome comparison dotplot")
 
 The GAL cluster protein sequence is highly conserved (~ 80% identity across *Candida*), while the surrounding genomic architecture has diverged substantially. This contrast highlights how functional constraint at the sequence level can persist even as chromosomal structure undergoes significant reorganization.
 
 
-![GAL cluster Comparison](/assets/work/GAL_figure2.png "GAL cluster genomic comparison results")
+![GAL cluster Comparison](/assets/work/GAL/GAL_figure2.png "GAL cluster genomic comparison results")
 
 ---
  
