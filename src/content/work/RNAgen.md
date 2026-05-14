@@ -11,8 +11,8 @@ tags:
   - ORF Modeling
   - FASTA
 ---
-##### [Click here for a Live Demo](https://rnagen.streamlit.app/)
->Live Demo UI built using Streamlit
+##### [Click here for a Demo](https://rnagen.streamlit.app/)
+>Demo UI built using Streamlit
 
 Source code:
 

@@ -129,7 +129,9 @@ const { Content } = await render(entry);
 		line-height: 1.1;
 		padding-inline-start: 1.5rem;
 		border-inline-start: 0.25rem solid var(--accent-dark);
-		color: var(--gray-0);
+		color: var(--gray-500);
+		background-color: var(--gray-900);
+		padding: 0.5rem
 	}
 
 	.back-link,
@@ -157,9 +159,9 @@ const { Content } = await render(entry);
 			gap: 2.5rem;
 		}
 
-		.content :global(blockquote) {
+		/* .content :global(blockquote) {
 			font-size: var(--text-2xl);
-		}
+		} */
 
 		.content :global(.step-dot) {
 			width: 45px;
