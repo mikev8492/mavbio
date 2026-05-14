@@ -180,8 +180,14 @@ const { Content } = await render(entry);
 		max-width: 100%;
 	}
 
-	.content :global(code) {
+	.content :global(:not(pre) > code) {
 		word-break: break-word;
+		background-color: #24292ed8; 
+		color: rgba(255, 169, 10, 0.842); 
+		/* color: #e1e4e8; */
+		padding: 0.2rem 0.2rem;
+		border-radius: 0.25rem;
+		font-size: 1.1em;
 	}
 
 	/* Case-study title section formatting */
