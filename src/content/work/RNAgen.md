@@ -7,9 +7,12 @@ description: |
   Synthetic RNA sequence generator
 tags:
   - Python
-  - Streamlit
+  - Sequence Analysis
+  - ORF Modeling
+  - FASTA
 ---
 ##### [Click here for a Live Demo](https://rnagen.streamlit.app/)
+>Live Demo UI built using Streamlit
 
 Source code:
 
@@ -52,7 +55,7 @@ When a run is initiated, the class iterates over the requested number of sequenc
 
 Flanking regions are added probabilistically, with independent random sequences appended to the 5′ and 3′ ends of the ORF when the flanking probability threshold is met.
 
-Each generated sequence is paired with a metadata description capturing its length, GC content, ambiguity content, ORF type, and flanking status, all computed via utility functions in the `sequence_lib.py` module. The full set of results is stored in self.results as a list of tuples containing the sequence ID, description, and sequence string. Once generation is complete, results are written to disk in FASTA format.
+Each generated sequence is paired with a metadata description capturing its length, GC content, ambiguity content, ORF type, and flanking status, all computed via utility functions in the `sequence_lib.py` module. The full set of results is stored as a list of tuples containing the **sequence ID**, **description**, and **sequence** string. Once generation is complete, results are written to disk in FASTA format.
 
 
 ![Program flowchart](/assets/work/RNAgen/RNAgen_flowchart.png)
