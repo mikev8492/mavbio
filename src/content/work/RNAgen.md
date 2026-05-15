@@ -11,13 +11,15 @@ tags:
   - ORF Modeling
   - FASTA
 ---
-##### [Click here for a Demo](https://rnagen.streamlit.app/)
->Demo UI built using Streamlit
 
 Source code:
 
 [![Open in GitHub](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/mikev8492/RNAgen)
 
+##### [Click here for a Demo](https://rnagen.streamlit.app/)
+>Demo UI built using Streamlit
+
+---
 
 #### Background:
 
@@ -44,6 +46,8 @@ Each sequence is constructed with an open reading frame (ORF) that is either com
 Optional flanking regions can be added to either side of the ORF to reflect the untranslated regions present in real transcript architecture. Sequence length, ORF completeness ratio, flanking probability, and flanking length are all user-controlled, allowing targeted simulation of specific biological conditions. 
 
 The FASTA output is immediately compatible with downstream tools such as BLAST, RNA-seq aligners, and ORF prediction software.
+
+---
 
 #### How It Works:
 
