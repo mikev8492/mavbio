@@ -16,7 +16,7 @@ Source code:
 
 [![Open in GitHub](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/mikev8492/RNAgen)
 
-##### [Click here for a Demo](https://rnagen.streamlit.app/)
+##### [Click here for a Demo](https://rna-gen.streamlit.app/)
 >Demo UI built using Streamlit
 
 ---
