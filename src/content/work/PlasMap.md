@@ -1,7 +1,7 @@
 ---
 title: PlasMap
 publishDate: 2026-05-14 00:00:00
-img: /assets/work/PlasMap/PlasMap_card.png
+img: /assets/work/PlasMap/PlasMap_thumbnail.png
 img_alt: Annotated Plasmid map 
 description: | 
   Synthetic RNA sequence generator
