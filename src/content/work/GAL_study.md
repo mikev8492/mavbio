@@ -9,7 +9,7 @@ tags:
   - Python
   - Bash
   - Minimap2
-  - Mummer4
+  - MUMmer4
   - SAMtools
 ---
 
@@ -19,14 +19,34 @@ tags:
     <div class="subtitle">Genomic localization, cross-species protein similarity, and chromosomal structural analysis of galactose-metabolism genes across pathogenic yeast genomes</div>
 </div>
 
-#### Overview
+---
+##### Table of Contents
+ 
+1. [Background](#background)
+2. [Research Goal](#research-goal)
+3. [Analysis](#analysis)
+4. [Bioinformatics Pipeline](#pipeline)
+5. [Results](#results)
+    - [Key Findings](#key-findings)
+6. [Bioinformatics Tools](#bioinformatics-tools)
+7. [References](#references)
+
+
+---
+
+#### Background
  
 The *GAL1*, *GAL7*, and *GAL10* genes encode the three enzymes of the Leloir pathway, the principal fungal route for converting galactose into glucose-1-phosphate for entry into glycolysis. In *Saccharomyces cerevisiae*, these genes are physically clustered on chromosome II and tightly co-regulated, an arrangement broadly conserved across the fungal kingdom. However, whether this genomic neighbourhood is maintained in more distantly related *Candida* species has remained poorly understood.
 
 ![GAL cluster pathway](/assets/work/GAL/GAL_leloir_pathway.png "GAL cluster and the Leloir Pathway")
 
-This project located the three genes within a draft genome of an unknown *Candida* species, compared protein-level conservation across taxa, and analysed the surrounding chromosomal architecture. By combining sequence homology searches, synteny analysis, and multi-species protein alignments, the study shows that while the Gal1, Gal7, and Gal10 proteins are highly conserved at the amino acid level, their chromosomal context has undergone considerable reorganisation relative to *S. albicans*. This contrast between gene-level conservation and large-scale genomic rearrangement highlights the value of integrating both levels of analysis when characterising metabolic pathways in non-model organisms.
+---
+#### Research Goal
+This project aimed to locate the three GAL genes within a draft genome of an unknown *Candida* species, compared protein-level conservation across taxa, and analysed the surrounding chromosomal architecture.
  
+---
+
+#### Analysis:
 ##### Genomic Locations
  
 Gene coordinates were identified within two well characterised Candida species using NCBI Genome Annotation pages and confirmed with assembly-specific filtering.
@@ -156,7 +176,7 @@ Pairwise alignments were performed with the UniProt Align Tool (Clustal Omega) a
     <div class="step-line"><div class="step-dot">05</div><div class="step-connector"></div></div>
     <div class="step-body">
         <div class="step-title">Whole-genome comparison &amp; Circos plot</div>
-        <div class="step-detail">MUMmer4 was used to align both full genomes. Coordinates were parsed with a Python script and visualized as a Circos synteny plot in Circa 2.0 (shown at the top of the page).<br><span class="tool-tag">mummer4</span><span class="tool-tag">python</span><span class="tool-tag">circa 2.0</span></div>
+        <div class="step-detail">MUMmer4 was used to align both full genomes. Coordinates were parsed with a Python script and visualized as a Circos synteny plot in Circa 2.0 (shown at the top of the page).<br><span class="tool-tag">MUMmer4</span><span class="tool-tag">python</span><span class="tool-tag">circa 2.0</span></div>
     </div>
 </div>
   
@@ -205,7 +225,7 @@ Pairwise alignments were performed with the UniProt Align Tool (Clustal Omega) a
 
 ---
 
-#### Key Findings:
+#### Results:
  
 Mapping to the unknown *Candida* draft genome confirmed that the GAL cluster order (**GAL1 → GAL10 → GAL7**) is preserved on `scaffold_1`, although the cluster is located on an inverted region relative to *C. albicans*.
 
@@ -232,9 +252,13 @@ The GAL cluster protein sequence is highly conserved (~ 80% identity across *Can
 
 ![GAL cluster Comparison](/assets/work/GAL/GAL_figure2.png "GAL cluster genomic comparison results")
 
+##### Key Findings
+
+By combining sequence homology searches, synteny analysis, and multi-species protein alignments, the study shows that while the Gal1, Gal7, and Gal10 proteins are highly conserved at the amino acid level, their chromosomal context has undergone considerable reorganisation relative to *S. albicans*. This contrast between gene-level conservation and large-scale genomic rearrangement highlights the value of integrating both levels of analysis when characterising metabolic pathways in non-model organisms.
+
 ---
  
-##### Skills & Tools:
+##### Bioinformatics Tools:
  
 - NCBI Genome Annotation, UniProt BLAST & Align, EMBOSS Needle
 - Minimap2 (splice-aware alignment), SAMtools, MUMmer4 / nucmer, mummerplot

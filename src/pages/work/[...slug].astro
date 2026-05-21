@@ -44,13 +44,10 @@ const { Content } = await render(entry);
 			</header>
 			<main class="wrapper">
 				<div class="stack gap-10 content">
-					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
+					{entry.data.img && <img id="cover" src={entry.data.img} alt={entry.data.img_alt || ''} />}
 					<div class="content">
 						<Content />
 					</div>
-					<!-- <video controls>
-						<source src={entry.data.video}type="video/mp4">
-					</video> -->
 				</div>
 			</main>
 		</div>
@@ -95,6 +92,11 @@ const { Content } = await render(entry);
 		max-width: 54ch;
 	}
 
+	#cover {
+		max-height: 75%;
+		align-self: center;
+	}
+
 	.content {
 		max-width: 85ch;
 		margin-inline: auto;
@@ -126,7 +128,7 @@ const { Content } = await render(entry);
 		font-size: var(--text-sm);
 		font-family: var(--font-brand);
 		font-weight: 600;
-		line-height: 1.1;
+		line-height: 1.5;
 		padding-inline-start: 1.5rem;
 		border-inline-start: 0.25rem solid var(--accent-dark);
 		color: var(--gray-500);
