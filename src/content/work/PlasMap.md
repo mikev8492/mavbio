@@ -1,6 +1,6 @@
 ---
 title: PlasMap
-publishDate: 2026-05-14 00:00:00
+publishDate: 2026-05-21 00:00:00
 img: /assets/work/PlasMap/PlasMap_thumbnail.png
 img_alt: Annotated Plasmid map 
 description: | 
